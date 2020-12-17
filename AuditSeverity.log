@@ -432,3 +432,25 @@ INFO  12:31:43 Content root path: C:\AuditSeverity\AuditSeverity
 INFO  12:31:43 Content root path: C:\AuditSeverity\AuditSeverity
 INFO  12:32:10 Audit Response is displayed of project name - string
 INFO  12:32:10 Successfully calculated audit status of project name - string
+INFO  02:06:02 Application started. Press Ctrl+C to shut down.
+INFO  02:06:03 Application started. Press Ctrl+C to shut down.
+INFO  02:06:03 Hosting environment: Development
+INFO  02:06:03 Hosting environment: Development
+INFO  02:06:03 Content root path: C:\AuditSeverity\AuditSeverity
+INFO  02:06:03 Content root path: C:\AuditSeverity\AuditSeverity
+INFO  02:37:53 Application started. Press Ctrl+C to shut down.
+INFO  02:37:53 Application started. Press Ctrl+C to shut down.
+INFO  02:37:53 Hosting environment: Development
+INFO  02:37:53 Hosting environment: Development
+INFO  02:37:53 Content root path: C:\AuditSeverity\AuditSeverity
+INFO  02:37:53 Content root path: C:\AuditSeverity\AuditSeverity
+INFO  02:39:34 Audit Response is displayed of project name - Bill
+INFO  02:39:34 Successfully calculated audit status of project name - Bill
+INFO  02:47:55 Application started. Press Ctrl+C to shut down.
+INFO  02:47:55 Application started. Press Ctrl+C to shut down.
+INFO  02:47:55 Hosting environment: Development
+INFO  02:47:55 Hosting environment: Development
+INFO  02:47:55 Content root path: C:\AuditSeverity\AuditSeverity
+INFO  02:47:55 Content root path: C:\AuditSeverity\AuditSeverity
+INFO  02:49:00 Audit Response is displayed of project name - Bill
+INFO  02:49:00 Successfully calculated audit status of project name - Bill

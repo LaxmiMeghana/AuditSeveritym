@@ -20,6 +20,7 @@ namespace AuditSeverity.Repository
             {
                 var contentType = new MediaTypeWithQualityHeaderValue("application/json");
                 client.DefaultRequestHeaders.Accept.Add(contentType);
+                //using (var response = await client.GetAsync("https://localhost:44361/api/AuditBenchmark"))
                 using (var response = await client.GetAsync("http://20.62.185.247/api/AuditBenchmark"))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
@@ -32,7 +33,7 @@ namespace AuditSeverity.Repository
             int benchMarkNo1 = auditList[1].BenchmarkNoAnswers;
             AuditResponse auditResponse;
 
-            if (request.AuditDetail.AuditType.Equals(typeofAudit) && benchMarkNo <= request.AuditDetail.CountOfNos)
+            if (request.AuditDetail.AuditType.Equals(typeofAudit) && request.AuditDetail.CountOfNos <= benchMarkNo)
             {
                 auditResponse = new AuditResponse();
                 auditResponse.AuditId = rand.Next();
@@ -40,7 +41,7 @@ namespace AuditSeverity.Repository
                 auditResponse.RemedialActionDuration = "No action needed";
                 return auditResponse;
             }
-            else if (request.AuditDetail.AuditType.Equals(typeofAudit) && benchMarkNo > request.AuditDetail.CountOfNos)
+            else if (request.AuditDetail.AuditType.Equals(typeofAudit) && request.AuditDetail.CountOfNos > benchMarkNo)
             {
                 auditResponse = new AuditResponse();
                 auditResponse.AuditId = rand.Next();
@@ -48,7 +49,7 @@ namespace AuditSeverity.Repository
                 auditResponse.RemedialActionDuration = "Action to be taken in 2 weeks";
                 return auditResponse;
             }
-            else if (request.AuditDetail.AuditType.Equals(typeofAudit1) && benchMarkNo1 <= request.AuditDetail.CountOfNos)
+            else if (request.AuditDetail.AuditType.Equals(typeofAudit1) &&  request.AuditDetail.CountOfNos <= benchMarkNo1 )
             {
                 auditResponse = new AuditResponse();
                 auditResponse.AuditId = rand.Next();
@@ -56,7 +57,7 @@ namespace AuditSeverity.Repository
                 auditResponse.RemedialActionDuration = "No action needed";
                 return auditResponse;
             }
-            else if (request.AuditDetail.AuditType.Equals(typeofAudit1) && benchMarkNo1 > request.AuditDetail.CountOfNos)
+            else if (request.AuditDetail.AuditType.Equals(typeofAudit1) && request.AuditDetail.CountOfNos > benchMarkNo1  )
             {
                 auditResponse = new AuditResponse();
                 auditResponse.AuditId = rand.Next();
