@@ -20,7 +20,7 @@ namespace AuditSeverity.Repository
             {
                 var contentType = new MediaTypeWithQualityHeaderValue("application/json");
                 client.DefaultRequestHeaders.Accept.Add(contentType);
-                using (var response = await client.GetAsync("http://40.88.229.55/api/AuditBenchmark"))
+                using (var response = await client.GetAsync("http://20.62.185.247/api/AuditBenchmark"))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
                     auditList = JsonConvert.DeserializeObject<List<AuditBenchmark>>(apiResponse);
