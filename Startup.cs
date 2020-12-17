@@ -50,7 +50,7 @@ namespace AuditSeverity
             app.UseSwagger();
             app.UseSwaggerUI(s =>
             {
-                s.SwaggerEndpoint("/swagger/v1.0/swagger.json", "Ticket");
+                s.SwaggerEndpoint("/swagger/v1.0/swagger.json", "AuditSeverity");
 
             });
 
